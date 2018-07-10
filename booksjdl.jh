@@ -1,0 +1,29 @@
+entity Author {
+	name String
+    birthDate LocalDate
+}
+
+entity Book {
+	title String
+    description String
+    publicationDate LocalDate
+    price BigDecimal
+}
+
+relationship OneToMany {
+	Author{book} to Book{author}
+}
+
+
+
+
+// Set pagination options
+paginate Author with infinite-scroll
+paginate Book with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with zamo
