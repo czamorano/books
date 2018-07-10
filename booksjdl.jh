@@ -19,7 +19,7 @@ relationship OneToMany {
 
 // Set pagination options
 paginate Author with infinite-scroll
-paginate Books with pagination
+paginate Book with pagination
 
 dto * with mapstruct
 
