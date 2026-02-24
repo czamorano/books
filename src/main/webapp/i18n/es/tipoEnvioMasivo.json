@@ -1,0 +1,10 @@
+{
+    "booksApp": {
+        "TipoEnvioMasivo": {
+            "null": "",
+            "CARTAS_ACREDITACION": "CARTAS_ACREDITACION",
+            "CARTAS_RENOVACION": "CARTAS_RENOVACION",
+            "REMESA_INSS": "REMESA_INSS"
+        }
+    }
+}
