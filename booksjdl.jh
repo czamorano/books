@@ -1,29 +1,52 @@
-entity Author {
-	name String
-    birthDate LocalDate
+
+entity Aplicacion {
+	nombre String required
 }
 
-entity Book {
-	title String
-    description String
-    publicationDate LocalDate
-    price BigDecimal
+// an ignored comment
+/** not an ignored comment */
+entity OrganismoEmisor {
+	nombre String required,
+	codigo String required
 }
 
+entity EnvioMasivo {
+	identificador String required,
+    tipo TipoEnvioMasivo required,
+    estado EstadoEnvioMasivo required,
+    comienzo Instant,
+    fin Instant
+}
+
+enum EstadoEnvioMasivo {
+	PREPARADO,
+    INICIADO,
+    PAUSADO,
+    REANUDADO,
+    FINALIZADO,
+    CANCELADO,
+    ABORTADO
+}
+
+enum TipoEnvioMasivo {
+    CARTAS_ACREDITACION, CARTAS_RENOVACION, REMESA_INSS
+}
+
+// defining multiple OneToMany relationships with comments
 relationship OneToMany {
-	Author{book} to Book{author}
+	Aplicacion to EnvioMasivo{aplicacion},
+    OrganismoEmisor to EnvioMasivo{organismoEmisor}
 }
-
-
-
 
 // Set pagination options
-paginate Author with infinite-scroll
-paginate Book with pagination
+paginate Aplicacion with infinite-scroll
+paginate EnvioMasivo with pagination
 
-dto * with mapstruct
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
 
 // Set service options to all except few
-service all with serviceImpl
+service all with serviceImpl except OrganismoEmiisor
+
 // Set an angular suffix
-angularSuffix * with zamo
+// angularSuffix * with mySuffix
