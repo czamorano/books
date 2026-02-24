@@ -9,7 +9,10 @@
                 "main": "Entities",
                 "authorZamo": "Author",
                 "bookZamo": "Book",
-                "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+                "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+                "aplicacion": "Aplicacion",
+                "organismoEmisor": "Organismo Emisor",
+                "envioMasivo": "Envio Masivo"
             },
             "account": {
                 "main": "Account",
@@ -86,7 +89,7 @@
             "id": "ID"
         },
         "ribbon": {
-            "dev":"Development"
+            "dev": "Development"
         },
         "item-count": "Showing {{first}} - {{second}} of {{total}} items."
     },

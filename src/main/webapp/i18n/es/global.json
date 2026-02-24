@@ -9,7 +9,10 @@
                 "main": "Entidades",
                 "authorZamo": "Author",
                 "bookZamo": "Book",
-                "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+                "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+                "aplicacion": "Aplicacion",
+                "organismoEmisor": "Organismo Emisor",
+                "envioMasivo": "Envio Masivo"
             },
             "account": {
                 "main": "Cuenta",
@@ -60,7 +63,7 @@
                 }
             },
             "error": {
-                "dontmatch" : "¡La contraseña y la confirmación de contraseña no coinciden!"
+                "dontmatch": "¡La contraseña y la confirmación de contraseña no coinciden!"
             },
             "validate": {
                 "newpassword": {
@@ -83,10 +86,10 @@
             }
         },
         "field": {
-            "id" : "ID"
+            "id": "ID"
         },
         "ribbon": {
-            "dev":"Development"
+            "dev": "Development"
         },
         "item-count": "Monstrando {{first}} - {{second}} de {{total}} artículos."
     },

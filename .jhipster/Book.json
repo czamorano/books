@@ -1,5 +1,13 @@
 {
-    "name": "Book",
+    "angularJSSuffix": "zamo",
+    "annotations": {
+        "changelogDate": "20180710223118"
+    },
+    "applications": "*",
+    "changelogDate": "20180710223118",
+    "clientRootFolder": "",
+    "dto": "mapstruct",
+    "entityTableName": "book",
     "fields": [
         {
             "fieldName": "title",
@@ -18,22 +26,19 @@
             "fieldType": "BigDecimal"
         }
     ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "name": "Book",
+    "pagination": "pagination",
     "relationships": [
         {
-            "relationshipType": "many-to-one",
-            "relationshipName": "author",
+            "otherEntityField": "id",
             "otherEntityName": "author",
-            "otherEntityField": "id"
+            "relationshipName": "author",
+            "relationshipSide": "left",
+            "relationshipType": "many-to-one"
         }
     ],
-    "changelogDate": "20180710223118",
-    "entityTableName": "book",
-    "dto": "mapstruct",
-    "pagination": "pagination",
-    "service": "serviceImpl",
-    "jpaMetamodelFiltering": false,
-    "fluentMethods": true,
-    "clientRootFolder": "",
-    "applications": "*",
-    "angularJSSuffix": "zamo"
+    "searchEngine": "no",
+    "service": "serviceImpl"
 }
